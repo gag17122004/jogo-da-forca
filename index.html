@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Jogo da Forca</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Jogo da Forca</h1>
+        <div class="hangman">
+            <!-- Adicione aqui a representação visual da forca, como desenho ou imagem -->
+        </div>
+        <div class="word-to-guess">
+            <p>Palavra: <span id="display-word">_ _ _ _ _</span></p>
+        </div>
+        <div class="guess-form">
+            <label for="guess">Digite uma letra:</label>
+            <input type="text" id="guess" maxlength="1">
+            <button id="guess-button">Adivinhar</button>
+        </div>
+        <div class="feedback">
+            <p id="feedback-text"></p>
+        </div>
+        <div class="attempts">
+            <p>Tentativas restantes: <span id="attempts">6</span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
